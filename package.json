@@ -1,0 +1,68 @@
+{
+  "name": "all-the-package-sizes",
+  "description": "All the pre-computed build size for each npm package",
+  "homepage": "https://documentup.com/Kikobeats/all-the-package-sizes",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": {
+    "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
+    "url": "https://kikobeats.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikobeats/all-the-package-sizes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/all-the-package-sizes/issues"
+  },
+  "files": [
+    "index.json"
+  ],
+  "devDependencies": {
+    "JSONStream": "latest",
+    "all-the-package-names": "latest",
+    "coveralls": "latest",
+    "git-dirty": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "lodash.map": "latest",
+    "mississippi": "latest",
+    "mocha": "latest",
+    "nodeify": "latest",
+    "nyc": "latest",
+    "ora": "latest",
+    "package-size": "latest",
+    "prettier-standard": "latest",
+    "pretty-bytes": "latest",
+    "progress-stream": "latest",
+    "should": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard-markdown && standard",
+    "precommit": "lint-staged",
+    "prelint": "npm run pretty",
+    "pretest": "npm run lint",
+    "pretty": "prettier-standard --single-quote {core,test,bin}/**/*.js",
+    "test": "nyc mocha"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "git add",
+      "prettier-standard"
+    ]
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
