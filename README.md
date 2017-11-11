@@ -1,5 +1,7 @@
 # all-the-package-sizes
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/all-the-package-sizes.svg)](https://greenkeeper.io/)
+
 ![Last version](https://img.shields.io/github/tag/Kikobeats/all-the-package-sizes.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/all-the-package-sizes/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/all-the-package-sizes)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/all-the-package-sizes.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/all-the-package-sizes)
